@@ -23,7 +23,6 @@
         android:text="@string/title_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toStartOf=""
         app:layout_constraintTop_toBottomOf="@+id/title_app" />
 
 
@@ -55,7 +54,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_in_button"
-        app:layout_constraintBottom_toStartOf="@+id/title_sign_in"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_TextInput" />
