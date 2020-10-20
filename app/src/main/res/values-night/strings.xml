@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">COLORISTIC</string>
+    <string name="title_name">Mobile UI Kit</string>
+    <string name="username_input">Username</string>
+    <string name="password_input">Password</string>
+    <string name="username_helper">Введите логин</string>
+    <string name="password_helper">Введите пароль</string>
     <string name="sign_in_button">SIGN IN</string>
+    <string name="sign_in_with_textView">OR SIGN IN WITH</string>
+    <string name="twitter_account">twitter account</string>
+    <string name="facebook_account">facebook account</string>
+    <string name="google_account">google account</string>
 </resources>

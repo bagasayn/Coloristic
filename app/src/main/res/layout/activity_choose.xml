@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/man_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/man"
+        android:scaleX="0.65"
+        android:scaleY="0.65"
+        android:src="@drawable/man"
+        app:layout_constraintBottom_toTopOf="@id/title_app_textView"
+        app:layout_constraintEnd_toEndOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/chat_imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/chat"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/man_imageView"
+        app:layout_constraintCircleAngle="285"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/picture_imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/picture"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/man_imageView"
+        app:layout_constraintCircleAngle="322"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/add_imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/add"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/man_imageView"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/play_imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/play"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/man_imageView"
+        app:layout_constraintCircleAngle="38"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/location_imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/location"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/man_imageView"
+        app:layout_constraintCircleAngle="75"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_app_textView"
+        style="@style/Title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coloristic"
+        app:layout_constraintBottom_toTopOf="@id/description_textView"
+        app:layout_constraintEnd_toEndOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintTop_toBottomOf="@id/man_imageView" />
+
+    <TextView
+        android:id="@+id/description_textView"
+        style="@style/Text_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintTop_toBottomOf="@id/title_app_textView" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toTopOf="@+id/description_qustion_textView"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/start_line"
+        app:layout_constraintTop_toBottomOf="@+id/description_textView"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/description_qustion_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        app:layout_constraintBottom_toTopOf="@id/sign_in_textView"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_button" />
+
+    <TextView
+        android:id="@+id/sign_in_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/end_line"
+        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintTop_toBottomOf="@id/description_qustion_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

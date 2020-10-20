@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/start_line"
@@ -29,14 +26,14 @@
         app:layout_constraintEnd_toEndOf="@id/end_line"
         app:layout_constraintStart_toStartOf="@id/start_line"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.005" />
 
     <TextView
         android:id="@+id/title_name"
         style="@style/Text_style"
         android:text="@string/title_name"
-        app:layout_constraintEnd_toEndOf="@+id/end_line"
-        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
         app:layout_constraintTop_toBottomOf="@+id/title_app" />
 
 
@@ -47,8 +44,8 @@
         android:layout_height="wrap_content"
         android:text="@string/username_input"
         app:helperText="@string/username_helper"
-        app:layout_constraintEnd_toEndOf="@+id/end_line"
-        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
         app:layout_constraintTop_toBottomOf="@+id/title_name" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -58,45 +55,41 @@
         android:layout_height="wrap_content"
         android:text="@string/password_input"
         app:helperText="@string/password_helper"
-        app:layout_constraintEnd_toEndOf="@+id/end_line"
-        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
         app:layout_constraintTop_toBottomOf="@+id/username_TextInput" />
 
     <Button
         android:id="@+id/sign_in_button"
-        style="@style/Text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_in_button"
-        app:layout_constraintEnd_toEndOf="@+id/end_line"
-        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
         app:layout_constraintTop_toBottomOf="@+id/password_TextInput" />
 
     <TextView
         android:id="@+id/title_sign_in"
-        style="@style/Text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_in_with_textView"
-        app:layout_constraintEnd_toEndOf="@+id/end_line"
-        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
         app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
 
     <ImageView
         android:id="@+id/twitter_imageView"
-        style="@style/Text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/twitter_account"
         android:src="@drawable/twitter"
         app:layout_constraintEnd_toStartOf="@+id/facebook_imageView"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
         app:layout_constraintTop_toBottomOf="@+id/title_sign_in" />
 
     <ImageView
         android:id="@+id/facebook_imageView"
-        style="@style/Text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/facebook_account"
@@ -107,12 +100,11 @@
 
     <ImageView
         android:id="@+id/google_imageView"
-        style="@style/Text_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/google_account"
         android:src="@drawable/google"
-        app:layout_constraintEnd_toEndOf="@+id/end_line"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
         app:layout_constraintStart_toEndOf="@+id/facebook_imageView"
         app:layout_constraintTop_toBottomOf="@id/title_sign_in" />
 
@@ -124,7 +116,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/notice_creat_new_account_textView"
         app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="@+id/start_line"
+        app:layout_constraintStart_toStartOf="@id/start_line"
         app:layout_constraintTop_toBottomOf="@+id/facebook_imageView"
         app:layout_constraintVertical_bias="0.9" />
 
@@ -134,7 +126,7 @@
         android:layout_height="wrap_content"
         android:text="@string/create_new_account"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/end_line"
+        app:layout_constraintEnd_toEndOf="@id/end_line"
         app:layout_constraintStart_toEndOf="@id/notice_about_forgetting_password"
         app:layout_constraintTop_toBottomOf="@+id/facebook_imageView"
         app:layout_constraintVertical_bias="0.9" />

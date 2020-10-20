@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Coloristic</string>
+    <string name="app_name">COLORISTIC</string>
     <string name="title_name">Mobile UI Kit</string>
     <string name="username_input">Username</string>
     <string name="password_input">Password</string>
@@ -10,5 +10,19 @@
     <string name="twitter_account">twitter account</string>
     <string name="facebook_account">facebook account</string>
     <string name="google_account">google account</string>
+    <string name="i_forgot_password">I forgot password</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="man">man</string>
+    <string name="chat">chat</string>
+    <string name="picture">picture</string>
+    <string name="add">add</string>
+    <string name="play">play</string>
+    <string name="location">location</string>
+    <string name="coloristic">Coloristic</string>
+    <string name="description">Poor Alice! It was as much as she could do, lying down on one side, to look through into the garden with one eye</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_have_an_account">Already have an accoint</string>
+
+
 
 </resources>
