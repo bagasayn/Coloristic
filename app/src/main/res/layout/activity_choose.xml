@@ -143,7 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
-        app:layout_constraintBottom_toTopOf="@+id/description_qustion_textView"
+        app:layout_constraintBottom_toTopOf="@+id/description_question_textView"
         app:layout_constraintEnd_toEndOf="@id/end_line"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/start_line"
@@ -152,7 +152,7 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/description_qustion_textView"
+        android:id="@+id/description_question_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/already_have_an_account"
@@ -169,6 +169,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/end_line"
         app:layout_constraintStart_toStartOf="@+id/start_line"
-        app:layout_constraintTop_toBottomOf="@id/description_qustion_textView" />
+        app:layout_constraintTop_toBottomOf="@id/description_question_textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
